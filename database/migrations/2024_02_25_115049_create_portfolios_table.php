@@ -13,6 +13,12 @@ return new class extends Migration
     {
         Schema::create('portfolios', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->text('description');
+            $table->string('image');
+            $table->string('link');
+            $table->unsignedBigInteger('portfolio_category_id');
+            $table->foreign('portfolio_category_id')->references('id')->on('categories');
             $table->timestamps();
         });
     }

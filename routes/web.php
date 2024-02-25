@@ -26,6 +26,8 @@ Route::middleware('auth')->group(function () {
 
     Route::resource('category',\App\Http\Controllers\CategoryController::class);
     Route::resource('blogs',\App\Http\Controllers\BlogsController::class);
+    Route::resource('portfolios',\App\Http\Controllers\PortfolioController::class);
+    Route::resource('portfolio_category',\App\Http\Controllers\PortfolioCategoryController::class);
 
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
