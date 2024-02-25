@@ -419,13 +419,9 @@
                     <h4>Men ijtimoiy tarmoqlarda</h4>
                     <p>Ijtimoiy tarmoqlarda menga obuna bo'ling va meni kuzatib boring ;)</p>
                     <div class="social-links mt-3">
-                        <a href="https://twitter.com/khamdullaevuz" class="twitter"><i class="bx bxl-twitter"></i></a>
-                        <a href="https://facebook.com/khamdullaevuz" class="facebook"><i
-                                class="bx bxl-facebook"></i></a>
-                        <a href="https://instagram.com/khamdullaevuz" class="instagram"><i class="bx bxl-instagram"></i></a>
-                        <a href="https://t.me/khamdullaevuz" class="telegram"><i class="bx bxl-telegram"></i></a>
-                        <a href="https://linkedin.com/in/khamdullaevuz" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-                        <a href="https://github.com/khamdullaevuz" class="github"><i class="bx bxl-github"></i></a>
+                        <a href="https://instagram.com/shoyim_obloqulov" class="instagram"><i class="bx bxl-instagram"></i></a>
+                        <a href="https://t.me/shoyimobloqulov" class="telegram"><i class="bx bxl-telegram"></i></a>
+                        <a href="https://github.com/shoyimobloqulov" class="github"><i class="bx bxl-github"></i></a>
                     </div>
                 </div>
 
@@ -439,6 +435,19 @@
         </div>
         <div class="credits">
             2019 - {{ date('Y') }}
+
+            <div class="row">
+                <div class="col-md-2">
+                    <a href="https://laravel.com">
+                        <img src="https://laravel.com/img/logomark.min.svg" style="width: 25px" alt="">
+                    </a>
+                </div>
+                <div class="col-md-9">
+                    <a href="https://bootstrapmade.com">
+                        <img src="https://bootstrapmade.com/assets/img/logo.png" style="width: 155px" alt="">
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 </footer><!-- End Footer -->
