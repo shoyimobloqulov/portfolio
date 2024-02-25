@@ -25,8 +25,19 @@
         </form>
 
         <ul class="sidebar-menu" data-widget="tree">
-            <li class="header">Super admin</li>
-
+            <li class="header">Sayt malumotlari</li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-desktop"></i> <span>Bloglar</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="{{ route('blogs.index') }}"><i class="fa fa-circle-o"></i> Ko'rish</a></li>
+                    <li><a href="{{ route('blogs.create') }}"><i class="fa fa-circle-o"></i> Qo'shish</a></li>
+                </ul>
+            </li>
             <li class="treeview {{ (Request::is('category*') || Request::is('colors*') || Request::is('countries*') || Request::is('regions*') || Request::is('districts*') || Request::is('villages*')) ? 'active':''}}">
                 <a href="#">
                     <i class="fa fa-paint-brush"></i>

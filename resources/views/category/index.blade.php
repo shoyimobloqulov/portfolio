@@ -69,6 +69,7 @@
                             <div class="form-group {{$errors->has('parent_id')?'has-error':''}}">
                                 <label for="countries_id">Kategoriya</label>
                                 <select class="form-control select2" id="parent_id" style="width: 100%;" name="parent_id">
+                                    <option value="0">Parent</option>
                                     @foreach($categoryList as $s)
                                         <option value="{{ $s->id }}">{{ $s->name }}</option>
                                     @endforeach

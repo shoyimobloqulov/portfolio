@@ -18,19 +18,19 @@
 
                 <div class="box box-primary">
                     <div class="box-header with-border">
-                        <h3 class="box-title">Blog taxrirlash</h3>
+                        <h3 class="box-title">Bloglar</h3>
                     </div>
 
-                    <form role="form" action="{{ route('blogs.update',$blog->id) }}" method="POST">
+                    <form role="form" action="{{ route('blogs.store') }}" method="POST">
                         @csrf
                         <div class="box-body">
                             <div class="form-group">
                                 <label for="subject">Mavzu</label>
-                                <input type="text" class="form-control" id="subject" name="subject" placeholder="Mavzu" value="{{ $blog->subject }}">
+                                <input type="text" class="form-control" id="subject" name="subject" placeholder="Mavzu">
                             </div>
                             <div class="form-group">
                                 <label for="desc">Mavzu</label>
-                                <textarea class="form-control" id="desc" name="desc">{!! $blog->desc !!}</textarea>
+                                <textarea class="form-control" id="desc" name="desc"></textarea>
                             </div>
                             <div class="form-group">
                                 <label>Categoriyalar</label>
